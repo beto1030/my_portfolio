@@ -1,0 +1,58 @@
+.flashcards-container {
+  text-align: center;
+}
+
+.flashcards-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flashcard-buttons {
+    position: absolute;
+    bottom: 0;
+}
+.tinderCards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tinderCard {
+  position: absolute;
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  margin: 20px; /* Adjust the margin as needed */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.tinderCard:not(:first-child) {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.tinderCard:nth-child(2) {
+  opacity: 0.2;
+  transform: translateY(-40px);
+}
+
+.tinderCard:nth-child(3) {
+  opacity: 0.4;
+  transform: translateY(-60px);
+}
+
+.tinderCard:nth-child(4) {
+  opacity: 0.6;
+  transform: translateY(-80px);
+}
+
+.tinderCard:nth-child(5) {
+  opacity: 0.8;
+  transform: translateY(-100px);
+}
+
+.tinderCard.flipped {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
